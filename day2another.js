@@ -13,15 +13,21 @@ function createListElement(){   //funciton to create list element and add imput 
     input.value ="";
 }
 
-button.addEventListener("click", function(){
+function addListAfterClick(){
     if(InputLength()> 0){ //condition because if we input sth it add to list and else it doesn't
-    createListElement();
-    }     
-})
+        createListElement();
+        }  
+}
 
-input.addEventListener("keypress", function(event){
-    
+function addListAfterEnter(event){
     if(InputLength() > 0 && event.keyCode === 13){ //condition because if we input sth it add to list and else it doesn't
         createListElement();
-    }     
-})
+    }  
+
+}
+
+button.addEventListener("click", addListAfterClick);
+
+
+
+input.addEventListener("keypress", addListAfterEnter);
