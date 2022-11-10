@@ -2,11 +2,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+//traversal of a  linked list
 class Node {
     public:
         int data;
         Node* next;
 };
+
+void printList(Node* n){
+    while (n != NULL){
+        cout << n->data << " ";
+        n = n->next;
+    }
+}
 
 int main(){
     Node* head = NULL;
@@ -27,6 +36,7 @@ int main(){
     third->data = 3;
     third->next = NULL;
 
+    printList(head);
 
     return 0;
 
