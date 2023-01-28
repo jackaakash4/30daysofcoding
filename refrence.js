@@ -27,4 +27,7 @@ let obj2 = obj1;
 obj2.name = 'Aryan';
 
 //whole obj1 and obj2's name will change to Aryan because Aryan is passed by refence 
+console.log(obj1);
+console.log(obj2);
+
 
