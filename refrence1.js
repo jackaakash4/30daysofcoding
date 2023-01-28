@@ -9,3 +9,10 @@ d.push(123456); //since d is copy of c, when we add another number in d it autom
 
 console.log(d);
 console.log(c);
+
+//if we want to just copy c in d without changing 
+
+var e = [].concat(c);
+e.push(10);
+//it only pushes 10 in e array
+console.log(e);
