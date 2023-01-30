@@ -5,7 +5,7 @@ let obj ={
 };
 
 //cloning the object obj to clone
-let clone = Object.addign({}, obj);
+let clone = Object.assign({}, obj);
 //new way to clone
 let clone2 = {...obj};
 
