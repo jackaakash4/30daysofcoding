@@ -24,4 +24,25 @@ fullName;
 userEmail = '       jackaakash4@gmail.com';
 userEmail2 = 'jackaakash4@gmail.com         ';
 console.log(userEmail.trimStart())
-console.log(userEmail2.trimEnd())
+console.log(userEmail2.trimEnd()) 
+
+
+//fromEntries
+//convert array into object
+userProfiles = [['Jack', 21], ['Aakash', 20], ['Aryan', 16]];
+const obj = Object.fromEntries(userProfiles);
+
+//and entries does exact opposite turning object into array
+Object.entries(obj);
+//object into array
+
+//rry catch and throw
+//error handling
+
+try{
+    bob + 'hi'
+} catch(error){
+    //if try is error do this
+    console.log('you messed up' + error)
+}
+//output will be 'you messed upReferenceError: bob is not defined
